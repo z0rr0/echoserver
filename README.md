@@ -28,7 +28,7 @@ Running server
 Running client
 -------------
     client <host> <port>
-    example: ./client tesunfun 50000
+    example: ./client anyhost 50000
     
 If chosen \<port\> is already used by some other application, server program use port from range 50000-55000.
 
