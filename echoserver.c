@@ -2,12 +2,6 @@
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
-/*
-#include <fcntl.h> 
-#include <netinet/in.h>
-#include <arpa/inet.h>
-*/
-
 #include <sys/socket.h>
 #include <sys/types.h>
 #include <signal.h>
@@ -44,7 +38,7 @@ int main(int argc, char* argv[])
 	
 	act.sa_sigaction = &sig_handler;
 	sigemptyset(&act.sa_mask);
-    act.sa_flags = SA_SIGINFO;
+	act.sa_flags = SA_SIGINFO;
 	if (sigaction(SIGINT, &act, NULL) < 0)
 		errorhand("sigaction error \n");
 
