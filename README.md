@@ -32,4 +32,4 @@ Running client
     
 If chosen \<port\> is already used by some other application, server program use port from range 50000-55000.
 
-**Tested** on Solaris 9. *Doesn't work in Linux*
+**Tested** on Solaris 9. *Doesn't work in Linux, but a code can be easily adapted.*
